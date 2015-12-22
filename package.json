@@ -1,0 +1,15 @@
+{
+  "name": "learnyounode",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "ex1.js",
+  "dependencies": {
+    "bl": "^1.0.0"
+  },
+  "repository": "-",
+  "devDependencies": {},
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
