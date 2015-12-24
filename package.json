@@ -4,7 +4,8 @@
   "description": "-",
   "main": "ex1.js",
   "dependencies": {
-    "bl": "^1.0.0"
+    "bl": "^1.0.0",
+    "through2-map": "^2.0.0"
   },
   "repository": "-",
   "devDependencies": {},
