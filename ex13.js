@@ -11,21 +11,19 @@ var server = http.createServer( function(req, res) {
         
         switch(reqUrl.pathname){
             case '/api/parsetime':
-                response = JSON.stringify({
+                response = {
                    hour: date.getHours(),
                    minute: date.getMinutes(),
                    second: date.getSeconds()
-                })
+                }
             break
             
             case '/api/unixtime':
-                response = JSON.stringify({
-                    unixtime: date.getTime()                   
-                })
+                response = { unixtime: date.getTime() }
                 break
         }
         res.writeHead(200, { 'Content-Type': 'application/json'})
-        res.end(response)
+        res.end(JSON.stringify(response))
     } 
 })
 
